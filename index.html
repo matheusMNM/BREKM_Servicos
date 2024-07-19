@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome Da Empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <header>
+    <div class="ConteinerLogo"><img src="" alt=""></div>
+    <ul>
+
+      <il onclick="cliqueDeRolagem(1)">
+        <div>DIV1</div>
+      </il>
+
+      <il onclick="cliqueDeRolagem(2)">
+        <div>DIV2</div>
+      </il>
+
+      <il onclick="cliqueDeRolagem(3)">
+        <div>DIV3</div>
+      </il>
+
+    </ul>
+  </header>
+
+  <main>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo1">
+      <h1>DIV1</h1>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo2">
+      <h1>DIV2</h1>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo3">
+      <h1>DIV3</h1>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo4">
+      <form>
+        <h2>Venha participar conosco</h2>
+        <label for="">Coloque seu Email</label>
+        <input type="text">
+        <button>Enviar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="ConteinerLogo"></div>
+    <h1>roda pé</h1>
+  </footer>
+
+  <script>
+    let viwl1 = document.getElementById('conteiner_de_conteudo1')
+    let viwl2 = document.getElementById('conteiner_de_conteudo2')
+    let viwl3 = document.getElementById('conteiner_de_conteudo3')
+    function cliqueDeRolagem(i) {
+      if (i == 1) {
+        viwl1.scrollIntoView({ behavior: 'smooth', })
+      }
+      if (i == 2) {
+        viwl2.scrollIntoView({ behavior: 'smooth', })
+      }
+      if (i == 3) {
+        viwl3.scrollIntoView({ behavior: 'smooth', })
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
