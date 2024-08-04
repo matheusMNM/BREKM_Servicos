@@ -1,0 +1,130 @@
+/* Add styles here */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    gap: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position:fixed;
+    z-index: 999;
+    display: flex;
+    color: white;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+main{
+    width:100%;
+    height:100%;
+    position: relative;
+    top: 100px;
+    display :grip;
+    gap: 50px;
+    background-image: url(imgderfundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    top: 60px;
+    color: white;
+    font-size: 9px;
+}
+.ConteinerLogo{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+}
+header >ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+header >ul>il> div{
+    width: 90px;
+    height: 20px;
+    background-color: rgb(236, 233, 233);
+    color: black;
+}
+.conteiner_de_conteudo{
+    width: 100%;
+    height: 500px;
+}
+.butaoDescrool{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    border: 2px solid black;
+    text-align: center;
+}
+.butaoDescrool:hover{
+    background-color: black;
+    color: white;
+}
+.butaoindex{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 12px;
+    border: 2px solid black;
+    text-align: center;
+}
+.inputindex{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    border-radius: 9px;
+    border: 2px solid black;
+    
+}
+form{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+p{
+    position: relative;
+    background: rgba(255, 255, 255, 0.5); /* Ajuste a cor e a opacidade conforme necessário */
+    padding: 20px;
+}
+
+
+@media (max-width:500px){
+    header{
+        height: 100px;
+        display: grid;
+        gap: 10px;
+    }
+    .ConteinerLogo{
+        width: 150px;
+        height: 50px;
+        left: 10px;
+    }
+    header >ul{
+        gap: 10px;
+        position: relative;
+        left: -20px;
+
+    }
+    
+}
