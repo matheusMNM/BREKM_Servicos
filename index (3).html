@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome Da Empresa</title>
+  <link rel="stylesheet" href="style copy 3.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="ConteinerLogo"></div>
+    <!---<ul>
+
+      <il onclick="cliqueDeRolagem(1)">
+        <div class="butaoDescrool">Sobre nós</div>
+      </il>
+
+      <il onclick="cliqueDeRolagem(2)">
+        <div class="butaoDescrool">Serviços</div>
+      </il>
+
+      <il onclick="cliqueDeRolagem(3)">
+        <div class="butaoDescrool">Modalidade</div>
+      </il>
+
+    </ul>--->
+  </header>
+
+  <main>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo1">
+      <p>Bem-vindo à Serviço Dex, sua parceira de confiança em serviços de construção residencial, projetos de
+        prefeitura, edifícios comerciais e muito mais. Somos uma empresa inovadora que opera na modalidade freelance,
+        trazendo flexibilidade, expertise e compromisso com a qualidade em cada projeto.</p>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo2">
+      <p>Construção Residencial
+        Transformamos sonhos em realidade. Nossa equipe de profissionais altamente qualificados está pronta para
+        construir a casa dos seus sonhos, desde o alicerce até o acabamento final. Cada detalhe é cuidadosamente
+        planejado e executado para garantir conforto, segurança e durabilidade.
+
+        Projetos de Prefeitura
+        Entendemos a importância de projetos bem estruturados e dentro das normas exigidas pelas prefeituras.
+        Trabalhamos com engenheiros e arquitetos experientes para criar projetos que atendam todas as regulamentações e
+        proporcionem funcionalidade e estética.
+
+        Edifícios Comerciais
+        Construímos edifícios comerciais que atendem às necessidades modernas de empresas e empreendimentos. Desde
+        escritórios a espaços comerciais, garantimos projetos que combinam design inovador, sustentabilidade e
+        praticidade.</p>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo3">
+      <p>Na Serviça Dex, acreditamos na flexibilidade e eficiência que a modalidade freelance proporciona. Nossos
+        profissionais freelancers são rigorosamente selecionados para oferecer o melhor serviço, com a mesma dedicação e
+        qualidade de uma equipe interna. Isso nos permite adaptar rapidamente às necessidades dos nossos clientes e
+        oferecer soluções personalizadas para cada projeto.
+
+        Por Que Escolher a Serviço Dex?
+        Profissionais Qualificados: Trabalhamos com os melhores profissionais freelancers do mercado, garantindo
+        qualidade e excelência em cada projeto.
+        Flexibilidade: Adaptamos nossos serviços às suas necessidades, oferecendo soluções personalizadas e prazos
+        ajustados ao seu cronograma.
+        Compromisso com a Qualidade: Cada projeto é executado com atenção aos detalhes e um compromisso inabalável com a
+        qualidade.
+        Transparência: Mantemos uma comunicação clara e aberta com nossos clientes, desde o planejamento até a entrega
+        final do projeto.</p>
+    </div>
+    <div class="conteiner_de_conteudo" id="conteiner_de_conteudo4">
+      <p>Está pronto para transformar seu projeto em realidade? Entre em contato com a Serviça Dex e descubra como
+        podemos ajudar você a construir seu futuro. Seja para uma casa dos sonhos, um projeto aprovado pela prefeitura
+        ou um edifício comercial inovador, estamos aqui para realizar suas ideias.</p>
+      <form>
+        <h2>Venha participar conosco</h2>
+        <label for="">Coloque seu Email:</label>
+        <input class="inputindex" type="email">
+        <button class="butaoindex">Continuar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="ConteinerLogo"></div>
+    <h1>Serviço Dex - Construindo Sonhos, Realizando Projetos.</h1>
+
+  </footer>
+
+  <script>
+    let viwl1 = document.getElementById('conteiner_de_conteudo1')
+    let viwl2 = document.getElementById('conteiner_de_conteudo2')
+    let viwl3 = document.getElementById('conteiner_de_conteudo3')
+    function cliqueDeRolagem(i) {
+      if (i == 1) {
+        viwl1.scrollIntoView({ behavior: 'smooth', })
+      }
+      if (i == 2) {
+        viwl2.scrollIntoView({ behavior: 'smooth', })
+      }
+      if (i == 3) {
+        viwl3.scrollIntoView({ behavior: 'smooth', })
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
