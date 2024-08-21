@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREKM SERVIÇOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo global */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #F9F9F9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #2C2C2C;
+            padding: 20px 0;
+            text-align: center;
+            color: #F0E68C;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #F0E68C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 24px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        main {
+            width: 100%;
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 100px;
+        }
+
+        #conteiner_de_into {
+            text-align: center;
+        }
+
+        section {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #2C2C2C;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 400;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        #conteiner_de_butoa_de_inf {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        #conteiner_de_butoa_de_inf button {
+            width: 200px;
+            height: 50px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #F0E68C;
+            color: #2C2C2C;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #conteiner_de_butoa_de_inf button:hover {
+            background-color: #D1B000;
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .conteiner_de_formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .conteiner_de_formulario h2 {
+            margin-bottom: 20px;
+            color: #2C2C2C;
+        }
+
+        .conteiner_de_formulario label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2C2C2C;
+            display: block;
+        }
+
+        .inputform {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 2px solid #D1B000;
+            background-color: #F9F9F9;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .inputform:focus {
+            border-color: #F0E68C;
+            outline: none;
+        }
+
+        .inputformbuton {
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            background-color: #F0E68C;
+            color: #2C2C2C;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .inputformbuton:hover {
+            background-color: #D1B000;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            main {
+                padding: 120px 10px 20px;
+            }
+
+            #conteiner_de_butoa_de_inf button {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BREKM SERVIÇOS</h1>
+        <p>Construindo sonhos, transformando espaços.</p>
+    </header>
+
+    <main>
+        <img src="Brekm.png" alt="Imagem da Empresa">
+        <section id="conteiner_de_into">
+            <h2>Bem-vindo à BREKM SERVIÇOS</h2>
+            <p>Somos uma nova empresa de construção civil que veio para transformar espaços e realizar sonhos. Estamos aqui para oferecer soluções práticas e sustentáveis para qualquer projeto, seja ele pequeno ou grande.</p>
+        </section>
+        <section>
+            <h2>Nossos Serviços</h2>
+            <p>Fazemos de tudo um pouco: reformas, construções completas, aluguel de equipamentos, e até venda de materiais. A gente cuida de tudo para que seu projeto saia do jeito que você imaginou, sempre com foco na satisfação do cliente e na utilização de materiais de qualidade.</p>
+        </section>
+        <section>
+            <h2>Sustentabilidade</h2>
+            <p>Nosso compromisso com o planeta é sério. Oferecemos descontos para quem escolhe materiais biodegradáveis e organizamos palestras para compartilhar dicas de reutilização de materiais. Queremos construir um futuro melhor, junto com você.</p>
+        </section>
+
+        <div id="conteiner_de_butoa_de_inf">
+            <button onclick="conteiner_form_job()">Trabalhe Conosco</button>
+            <button onclick="conteiner_planos()">Planos</button>
+        </div>
+    </main>
+
+    <form id="form_job" class="conteiner_de_formulario" style="display: none;">
+        <h2>Trabalhe Conosco</h2>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" class="inputform" required>
+        <label for="idade">Idade:</label>
+        <input type="date" id="idade" class="inputform" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" class="inputform" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" class="inputform" required>
+        <label for="cep">CEP:</label>
+        <input type="number" id="cep" class="inputform" required>
+        <label for="conhecimento">Conhecimento em:</label>
+        <select id="conhecimento" class="inputform" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="arq">Arquitetura</option>
+            <option value="eng">Engenharia</option>
+            <option value="plan">Planejamento</option>
+            <option value="constu">Construção</option>
+        </select>
+        <button class="inputformbuton">Enviar</button>
+    </form>
+
+    <div id="planos" class="planos_conteiner" style="display: none;">
+        <h2>Planos</h2>
+        <button class="inputformbuton">Plano Basic</button>
+        <button class="inputformbuton">Plano Prata</button>
+        <button class="inputformbuton">Plano Ouro</button>
+        <button class="inputformbuton" style="background-color: #D1B000; color: #2C2C2C;">Fazer Orçamento</button>
+    </div>
+
+    <script>
+        function conteiner_form_job() {
+            document.getElementById('form_job').style.display = 'flex';
+            document.getElementById('planos').style.display = 'none';
+        }
+
+        function conteiner_planos() {
+            document.getElementById('form_job').style.display = 'none';
+            document.getElementById('planos').style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
